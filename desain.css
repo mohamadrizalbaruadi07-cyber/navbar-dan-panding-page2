@@ -1,0 +1,87 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b5998;
+    padding: 10px 30px;
+}
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+.logo-box span {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.menu-box {
+    display: flex;
+}
+.menu-box a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.menu-box a:hover {
+    text-decoration: underline;
+}
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f0f2f5;
+    text-align: center;
+    padding: 20px;
+}
+.hero-content {
+    max-width: 600px;
+    font-family: sans-serif;
+}
+.hero-content h1 {
+    font-size: 36px;
+    color: #1c1e21;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 18px;
+    color: #606770;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-primary{
+    background-color: #1877f2;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: sans-serif;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #166fe5;
+}
+.btn-secondary {
+    background-color: #e4e6eb;
+    color: #4b4f56;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: sans-serif;
+    transition: background-color 0.3s;
+}
+.btn-secondary:hover {
+    background-color: #d8dadf;
+}
