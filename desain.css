@@ -1,44 +1,105 @@
+* { box-sizing: border-box; }
 
+body {
+    margin: 0;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+/* ===== Navbar (tidak diubah) ===== */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #3b5998;
     padding: 10px 30px;
+    position: sticky;
+    top: 0;
 }
 .logo-box {
     display: flex;
     align-items: center;
 }
+.logo-box img { border-radius: 8px; }
 .logo-box span {
     color: white;
-    font-family: sans-serif;
     font-weight: bold;
     font-size: 20px;
     margin-left: 10px;
 }
-.menu-box {
-    display: flex;
-}
+.menu-box { display: flex; }
 .menu-box a {
     color: white;
     text-decoration: none;
     margin-left: 25px;
-    font-family: sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
-.menu-box a:hover {
-    text-decoration: underline;
+.menu-box a:hover { text-decoration: underline; }
+
+/* ===== Area tengah: form login di tengah layar ===== */
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;  /* tengah horizontal */
+    align-items: center;      /* tengah vertikal */
+    padding: 20px;
 }
+
 .login {
-    margin-top: 25px;
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
-    background-color: #3b5998;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    padding:20px ;
-    font-family:sans-serif ;
-    color: aliceblue;
-} 
+}
+.login h2 {
+    margin: 0 0 20px;
+    color: #1c1e21;
+}
+.login input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.login input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+.login button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.login button:hover { background-color: #166fe5; }
+
+.lupa {
+    display: block;
+    margin-top: 15px;
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+}
+.lupa:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+    nav { padding: 10px 15px; }
+    .menu-box a { margin-left: 12px; font-size: 14px; }
+}
